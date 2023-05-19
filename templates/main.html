@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      padding: 50px;
+      color: white;
+    }
+
+    .bd{
+      background-image: url("https://risic.ai/wp-content/uploads/Machine_Learning-1-scaled.jpg");
+    }
+  
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+  
+    .form-group label {
+      font-weight: bold;
+    }
+
+    
+    .navbar {
+      background-color: #333;
+    }
+  
+    .navbar-brand,
+    .navbar-nav .nav-link {
+      color: #fff;
+    }
+  
+    .btn-primary {
+      width: 100%;
+    }
+  
+    .row-cols-2 > * {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+  </style>
+  <title>Main Page</title>
+</head>
+
+<body class="bd">
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+    <a class="navbar-brand" href="/home">AuditAI</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/predict">Predict</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h2 class="text-center mt-5">Welcome to the Main Page</h2>
+    <form action="/riskpred" method="POST">
+      <div class="row row-cols-2">
+        <div class="col mb-3">
+          <div class="form-group">
+            <label for="Sector_score">Sector Score:</label>
+            <input type="text" class="form-control" id="Sector_score" name="Sector_score" required>
+          </div>
+        </div>
+        <div class="col mb-3">
+          <div class="form-group">
+            <label for="PARA_A">PARA A:</label>
+            <input type="text" class="form-control" id="PARA_A" name="PARA_A" required>
+          </div>
+        </div>
+        <div class="col mb-3">
+          <div class="form-group">
+            <label for="Risk_A">Risk A:</label>
+            <input type="text" class="form-control" id="Risk_A" name="Risk_A" required>
+          </div>
+        </div>
+        <div class="col mb-3">
+          <div class="form-group">
+            <label for="PARA_B">PARA B:</label>
+            <input type="text" class="form-control" id="PARA_B" name="PARA_B" required>
+          </div>
+        </div>
+        <div class="col mb-3">
+          <div class="form-group">
+            <label for="Risk_B">Risk B:</label>
+            <input type="text" class="form-control" id="Risk_B" name="Risk_B" required>
+          </div>
+        </div>
+        <div class="col mb-3">
+          <div class="form-group">
+            <label for="TOTAL">TOTAL:</label>
+            <input type="text" class="form-control" id="TOTAL" name="TOTAL" required>
+          </div>
+        </div>
+        <div class="col mb-3">
+          <div class="form-group">
+            <label for="numbers">Numbers:</label>
+            <input type="text" class="form-control" id="numbers" name="numbers" required>
+          </div>
+        </div>
+        <div class="col mb-3">
+          <div class="form-group">
+            <label for="Money_Value">Money Value:</label>
+            <input type="text" class="form-control" id="Money_Value" name="Money_Value" required>
+          </div>
+        </div>
+        <div class="col mb-3">
+          <div class="form-group">
+            <label for="Score_MV">Score MV:</label>
+            <input type="text" class="form-control" id="Score_MV" name="Score_MV" required>
+          </div>
+        </div>
+        <div class="col mb-3">
+          <div class="form-group">
+            <label for="District_Loss">District Loss:</label>
+            <input type="text" class="form-control" id="District_Loss" name="District_Loss" required>
+          </div>
+        </div>
+        <div class="col mb-3">
+          <div class="form-group">
+            <label for="History">History:</label>
+            <input type="text" class="form-control" id="History" name="History" required>
+          </div>
+        </div>
+        <div class="col mb-3">
+          <div class="form-group">
+            <label for="Score">Score:</label>
+            <input type="text" class="form-control" id="Score" name="Score" required>
+          </div>
+        </div>
+        <div class="col mb-3">
+          <div class="form-group">
+            <label for="Inherent_Risk">Inherent Risk:</label>
+            <input type="text" class="form-control" id="Inherent_Risk" name="Inherent_Risk" required>
+          </div>
+        </div>
+        <div class="col mb-3">
+          <div class="form-group">
+            <label for="Audit_Risk">Audit Risk:</label>
+            <input type="text" class="form-control" id="Audit_Risk" name="Audit_Risk" required>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-4">
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+    </form>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

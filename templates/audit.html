@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: #f7f7f7;
+      padding-top: 60px;
+    }
+  
+    .navbar {
+      background-color: #333;
+    }
+  
+    .navbar-brand,
+    .navbar-nav .nav-link {
+      color: #fff;
+    }
+  
+    .jumbotron {
+      background-image: url("https://assets.kpmg.com/is/image/kpmg/blue-digital-lines-web-pattern-on-blue-purple-background:cq5dam.web.1200.630");
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+      padding: 5%;
+      padding-right: 30%;
+      height: fit-content;
+      margin-bottom: 0;
+      font-size: 5%;
+    }
+  
+    .summary {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+  
+    .btn-primary {
+      font-size: 18px;
+      padding: 12px 40px;
+    }
+  </style>
+  <title>AuditAI - Home</title>
+</head>
+
+<body>
+  <div>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+    <a class="navbar-brand" href="/home">AuditAI</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/predict">Predict</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="jumbotron">
+    <div class="container">
+      <h1 class="display-4">AuditAI: A Machine Learning for Detecting Fraud in Audit Data</h1>
+      <p class="lead">Welcome to AuditAI, an advanced machine learning system that helps detect fraud in audit data. With
+        state-of-the-art algorithms and predictive models, we provide accurate and reliable risk assessments.</p>
+      <p class="summary">Our system leverages the power of machine learning to analyze financial data, identify patterns,
+        and predict potential fraud risks. Try it out now!</p>
+      <a href="/predict" class="btn btn-primary btn-lg">Predict</a>
+    </div>
+  </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
